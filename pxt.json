@@ -14,5 +14,6 @@
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "github:elecfreaks/pxt-motorbit#v0.0.10"
+    "installedVersion": "github:elecfreaks/pxt-motorbit#v0.0.10",
+    "preferredEditor": "tsprj"
 }
