@@ -28,7 +28,9 @@ namespace motorbit {
         pins.digitalWritePin(DigitalPin.P12, 0)
 
         pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
+        pins.analogSetPeriod(AnalogPin.P1, 1)
         pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
+        pins.analogSetPeriod(AnalogPin.P2, 1)
 
     }
 
