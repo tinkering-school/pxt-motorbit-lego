@@ -1,6 +1,6 @@
 {
     "name": "motorbit",
-    "version": "0.0.17",
+    "version": "0.0.18",
     "description": "ELECFREAKS motor:bit for Lego",
     "license": "MIT",
     "dependencies": {
