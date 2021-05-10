@@ -78,7 +78,7 @@ namespace motorbit {
 
     }
 
-    //% blockId=motorbit_brake_m2 block="brake M1"
+    //% blockId=motorbit_brake_m2 block="brake M2"
     export function brake_m2(): void {
         // Add code here
 
