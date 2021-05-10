@@ -14,6 +14,79 @@
  */
 //% color=#0fbc11 weight=10 icon="\uf1b9"
 namespace motorbit {
+    var m_freq = 870;
+
+    //% blockId=motorbit_forward_m1 block="move M1 forward with speed %n"
+    //% n.min=0 n.max=100
+    export function forward_m1(n: number): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P8, 0)
+
+        pins.analogWritePin(AnalogPin.P1, Math.round(n * 1023 / 100))
+        pins.analogSetPeriod(AnalogPin.P1, m_freq)
+        
+
+    }
+
+    //% blockId=motorbit_back_m1 block="move M1 back with speed %n"
+    //% n.min=0 n.max=100
+    export function back_m1(n: number): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P8, 1)
+
+        pins.analogWritePin(AnalogPin.P1, Math.round(n * 1023 / 100))
+        pins.analogSetPeriod(AnalogPin.P1, m_freq)
+        
+
+    }
+
+    //% blockId=motorbit_brake_m1 block="brake M1"
+    export function brake_m1(): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P8, 0)
+        pins.analogWritePin(AnalogPin.P1, 0)
+
+    }
+
+
+    //% blockId=motorbit_forward_m2 block="move M2 forward with speed %n"
+    //% n.min=0 n.max=100
+    export function forward_m2(n: number): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P12, 0)
+
+        pins.analogWritePin(AnalogPin.P2, Math.round(n * 1023 / 100))
+        pins.analogSetPeriod(AnalogPin.P2, m_freq)
+        
+
+    }
+
+    //% blockId=motorbit_back_m2 block="move M2 back with speed %n"
+    //% n.min=0 n.max=100
+    export function back_m2(n: number): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P12, 1)
+
+        pins.analogWritePin(AnalogPin.P2, Math.round(n * 1023 / 100))
+        pins.analogSetPeriod(AnalogPin.P2, m_freq)
+        
+
+    }
+
+    //% blockId=motorbit_brake_m2 block="brake M1"
+    export function brake_m2(): void {
+        // Add code here
+
+        pins.digitalWritePin(DigitalPin.P12, 0)
+        pins.analogWritePin(AnalogPin.P2, 0)
+
+    }
+
 
     /**
     * TODO: describe your function here
