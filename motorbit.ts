@@ -14,7 +14,7 @@
  */
 //% color=#0fbc11 weight=10 icon="\uf1b9"
 namespace motorbit {
-    var m_freq = 870;
+    let m_freq = 870;
 
     //% blockId=motorbit_forward_m1 block="move M1 forward with speed %n"
     //% n.min=0 n.max=100
